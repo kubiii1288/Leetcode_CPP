@@ -1,0 +1,6 @@
+# ninja log v6
+3	303	1741723880509368623	CMakeFiles/Leetcode.dir/main.cpp.o	6632f0548a39b62e
+3	310	1741723880509710332	CMakeFiles/Leetcode.dir/Richest_Customer_Wealth_1672.cpp.o	dfde4252f1138878
+3	317	1741723880509582915	CMakeFiles/Leetcode.dir/Running_of_1D_array_1480.cpp.o	35e48ebaeed1862c
+3	328	1741723946513228401	CMakeFiles/Leetcode.dir/Fizz_Buzz_412.cpp.o	1ff7fde2c7b028d4
+328	360	1741723946838376501	Leetcode	76bc15ca63e0017e
