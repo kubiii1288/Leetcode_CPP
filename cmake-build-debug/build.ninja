@@ -91,6 +91,48 @@ build CMakeFiles/Leetcode.dir/Ransom_Note_383.cpp.o: CXX_COMPILER__Leetcode_unsc
   OBJECT_DIR = CMakeFiles/Leetcode.dir
   OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
 
+build CMakeFiles/Leetcode.dir/Unique_Binary_Search_Trees_II_95.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Unique_Binary_Search_Trees_II_95.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Unique_Binary_Search_Trees_II_95.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Max_Consecutive_Ones_485.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Max_Consecutive_Ones_485.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Max_Consecutive_Ones_485.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Find_Numbers_with_Even_Number_of_Digits_1295.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Find_Numbers_with_Even_Number_of_Digits_1295.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Find_Numbers_with_Even_Number_of_Digits_1295.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Squares_of_a_Sorted_Array_977.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Squares_of_a_Sorted_Array_977.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Squares_of_a_Sorted_Array_977.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Duplicate_Zeros_1089.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Duplicate_Zeros_1089.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Duplicate_Zeros_1089.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Merge_Sorted_Array_88.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Merge_Sorted_Array_88.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Merge_Sorted_Array_88.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
+build CMakeFiles/Leetcode.dir/Remove_Element_27.cpp.o: CXX_COMPILER__Leetcode_unscanned_Debug /Users/kubiii/CLionProjects/Leetcode/Remove_Element_27.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/Remove_Element_27.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Leetcode
@@ -99,7 +141,7 @@ build CMakeFiles/Leetcode.dir/Ransom_Note_383.cpp.o: CXX_COMPILER__Leetcode_unsc
 #############################################
 # Link the executable Leetcode
 
-build Leetcode: CXX_EXECUTABLE_LINKER__Leetcode_Debug CMakeFiles/Leetcode.dir/main.cpp.o CMakeFiles/Leetcode.dir/Running_of_1D_array_1480.cpp.o CMakeFiles/Leetcode.dir/Richest_Customer_Wealth_1672.cpp.o CMakeFiles/Leetcode.dir/Fizz_Buzz_412.cpp.o CMakeFiles/Leetcode.dir/Number_of_Steps_to_Reduce_a_Number_to_Zero_1342.cpp.o CMakeFiles/Leetcode.dir/Middle_of_The_Linked_List_876.cpp.o CMakeFiles/Leetcode.dir/Ransom_Note_383.cpp.o
+build Leetcode: CXX_EXECUTABLE_LINKER__Leetcode_Debug CMakeFiles/Leetcode.dir/main.cpp.o CMakeFiles/Leetcode.dir/Running_of_1D_array_1480.cpp.o CMakeFiles/Leetcode.dir/Richest_Customer_Wealth_1672.cpp.o CMakeFiles/Leetcode.dir/Fizz_Buzz_412.cpp.o CMakeFiles/Leetcode.dir/Number_of_Steps_to_Reduce_a_Number_to_Zero_1342.cpp.o CMakeFiles/Leetcode.dir/Middle_of_The_Linked_List_876.cpp.o CMakeFiles/Leetcode.dir/Ransom_Note_383.cpp.o CMakeFiles/Leetcode.dir/Unique_Binary_Search_Trees_II_95.cpp.o CMakeFiles/Leetcode.dir/Max_Consecutive_Ones_485.cpp.o CMakeFiles/Leetcode.dir/Find_Numbers_with_Even_Number_of_Digits_1295.cpp.o CMakeFiles/Leetcode.dir/Squares_of_a_Sorted_Array_977.cpp.o CMakeFiles/Leetcode.dir/Duplicate_Zeros_1089.cpp.o CMakeFiles/Leetcode.dir/Merge_Sorted_Array_88.cpp.o CMakeFiles/Leetcode.dir/Remove_Element_27.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/Leetcode.dir
   POST_BUILD = :
