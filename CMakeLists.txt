@@ -16,4 +16,20 @@ add_executable(Leetcode main.cpp
         Squares_of_a_Sorted_Array_977.cpp
         Duplicate_Zeros_1089.cpp
         Merge_Sorted_Array_88.cpp
-        Remove_Element_27.cpp)
+        Remove_Element_27.cpp
+        Remove_Duplicates_from_Sorted_Array_26.cpp
+        Check_If_N_and_Its_Double_Exist_1346.cpp
+        Replace_Elements_with_Greatest_Element_on_Right_Side_1299.cpp
+        Move_Zeroes_283.cpp
+        Find_All_Numbers_Disappeared_in_an_Array_448.cpp
+        Sort_Array_By_Parity_905.cpp
+        Third_Maximum_Number_414.cpp
+        Valid_Mountain_Array_941.cpp
+        Height_Checker_1051.cpp
+        Sort_an_Array_912.cpp
+        TreeNode.h
+        Validate_Binary_Search_Tree_98.cpp
+        TreeNode.cpp
+        Maximum_Area_of_Longest_Diagonal_Rectangle_3000.cpp
+        Maximum_Area_of_Longest_Diagonal_Rectangle_3000.h
+)
