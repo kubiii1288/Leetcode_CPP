@@ -31,5 +31,7 @@ add_executable(Leetcode main.cpp
         Validate_Binary_Search_Tree_98.cpp
         TreeNode.cpp
         Maximum_Area_of_Longest_Diagonal_Rectangle_3000.cpp
-        Maximum_Area_of_Longest_Diagonal_Rectangle_3000.h
+        Vowels_Game_in_a_String_3227.cpp
+        Sort_Vowels_in_a_String_2785.cpp
+        Reverse_Vowels_of_a_String_345.cpp
 )

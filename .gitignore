@@ -2,6 +2,7 @@
 build/
 cmake-build-debug/
 cmake-build-release/
+main.dSYM/
 
 # CMake generated files
 CMakeFiles/
