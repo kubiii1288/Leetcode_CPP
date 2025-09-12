@@ -1,0 +1,28 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake.in
+
+# IDE specific files
+.idea/
+.vscode/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
+
+# Executables and Libraries
+*.exe
+*.dll
+*.so
+*.dylib
