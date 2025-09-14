@@ -3,7 +3,7 @@ build/
 cmake-build-debug/
 cmake-build-release/
 main.dSYM/
-
+main
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt

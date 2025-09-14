@@ -3,9 +3,18 @@
 //
 
 #include <iostream>
-#include <algorithm>
+#include <set>
 using namespace std;
 
-bool doesAliceWin(string s) {
 
+bool doesAliceWin(string s)
+{
+    set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+    for (char& c : s)
+    {
+        if (vowels.find(c) != vowels.end())
+            return true;
+    }
+
+    return false;
 }
