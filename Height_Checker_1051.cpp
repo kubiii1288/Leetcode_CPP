@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;
 
-int heightChecker(vector<int>& heights) {
+int heightChecker(vector<int>& heights)
+{
     vector<int> temp = heights;
     sort(temp.begin(), temp.end());
     int cnt = 0;
@@ -12,5 +13,5 @@ int heightChecker(vector<int>& heights) {
     {
         if (temp[i] != heights[i]) cnt++;
     }
-   return cnt;
+    return cnt;
 }

@@ -5,7 +5,8 @@
 #include <unordered_set>
 using namespace std;
 
-int removeDuplicates(vector<int>& nums) {
+int removeDuplicates(vector<int>& nums)
+{
     nums.erase(unique(nums.begin(), nums.end()), nums.end());
     return nums.size();
 }

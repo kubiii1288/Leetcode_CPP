@@ -5,21 +5,23 @@
 #include <unordered_set>
 using namespace std;
 
-bool canConstruct(string ransomNote, string magazine) {
-   unordered_multiset<char> s;
-   for (char c : magazine)
-   {
-      s.insert(c);
-   }
+bool canConstruct(string ransomNote, string magazine)
+{
+    unordered_multiset<char> s;
+    for (char c : magazine)
+    {
+        s.insert(c);
+    }
 
-   for (char c : ransomNote)
-   {
-      unordered_multiset<char>::iterator it = s.find(c);
-      if (it != s.end())
-      {
-         s.erase(it);
-      } else return false;
-   }
+    for (char c : ransomNote)
+    {
+        unordered_multiset<char>::iterator it = s.find(c);
+        if (it != s.end())
+        {
+            s.erase(it);
+        }
+        else return false;
+    }
 
-   return true;
+    return true;
 }

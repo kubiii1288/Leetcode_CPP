@@ -6,14 +6,15 @@
 
 using namespace std;
 
-int maximumWealth(vector<vector<int>>& accounts) {
+int maximumWealth(vector<vector<int>>& accounts)
+{
     int max_balance = -1;
-    for (const vector<int> &account : accounts)
+    for (const vector<int>& account : accounts)
     {
         int sum = 0;
-        for (const int &balance : account)
+        for (const int& balance : account)
         {
-           sum+= balance;
+            sum += balance;
         }
         max_balance = std::max(max_balance, sum);
     }

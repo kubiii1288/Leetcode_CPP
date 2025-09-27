@@ -5,7 +5,9 @@
 #include <iostream>
 #include <set>
 using namespace std;
-int thirdMax(vector<int>& nums) {
+
+int thirdMax(vector<int>& nums)
+{
     set<int> s;
 
     for (int i : nums)

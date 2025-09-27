@@ -39,8 +39,8 @@ vector<TreeNode*> gen_sub(int from, int to)
 
     for (int i = from; i <= to; i++)
     {
-        vector<TreeNode*> left_side = gen_sub(from, i-1);
-        vector<TreeNode*> right_side = gen_sub(i+1, to);
+        vector<TreeNode*> left_side = gen_sub(from, i - 1);
+        vector<TreeNode*> right_side = gen_sub(i + 1, to);
         for (TreeNode* left_branch : left_side)
         {
             for (TreeNode* right_branch : right_side)

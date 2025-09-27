@@ -3,7 +3,9 @@
 //
 
 static bool both_are_space(char l, char r) { return (l == r) && (r == ' '); }
-string reverseWords(string& s) {
+
+string reverseWords(string& s)
+{
     // trim left
     int left = 0;
     while (s[left] == ' ')
@@ -21,7 +23,8 @@ string reverseWords(string& s) {
     reverse(s.begin(), s.end());
     left = right = 0;
 
-    while (left < s.size() && right < s.size()) {
+    while (left < s.size() && right < s.size())
+    {
         while (right < s.size() && s[right] != ' ')
             right++;
         reverse(s.begin() + left, s.begin() + right);

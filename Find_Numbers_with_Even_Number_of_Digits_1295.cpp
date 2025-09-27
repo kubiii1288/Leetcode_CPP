@@ -4,7 +4,8 @@
 #include<iostream>
 using namespace std;
 
-int findNumbers(vector<int>& nums) {
+int findNumbers(vector<int>& nums)
+{
     int max_even_digits = 0;
     for (const int num : nums)
     {

@@ -1,12 +1,9 @@
 //
 // Created by Anh Le on 3/18/25.
 //
-#include <iostream>
-using namespace std;
-
 vector<int> findDisappearedNumbers(vector<int>& nums)
 {
-    vector<bool> check(nums.size()+1);
+    vector<bool> check(nums.size() + 1);
 
     for (int i = 0; i < nums.size(); i++)
         check[nums[i]] = true;

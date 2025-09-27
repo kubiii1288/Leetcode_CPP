@@ -5,10 +5,12 @@
 #include <set>
 #include <algorithm>
 using namespace std;
-string sortVowels(string s) {
+
+string sortVowels(string s)
+{
     set<char> vowels = {'a', 'e', 'i', 'o', 'u'};
     vector<char> v;
-    for (char &c : s)
+    for (char& c : s)
     {
         if (vowels.find(tolower(c)) != vowels.end())
         {
@@ -17,7 +19,7 @@ string sortVowels(string s) {
         }
     }
     sort(v.begin(), v.end());
-    for (int i = s.size()-1; i >= 0; i--)
+    for (int i = s.size() - 1; i >= 0; i--)
     {
         if (s[i] == '1')
         {

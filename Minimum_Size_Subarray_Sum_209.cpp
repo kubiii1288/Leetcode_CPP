@@ -1,6 +1,6 @@
-#include <iostream>
-using namespace std;
-
+//
+// Created by Anh Le on 9/27/25.
+//
 int minSubArrayLen(int target, vector<int>& nums)
 {
     int left, right;
@@ -19,11 +19,4 @@ int minSubArrayLen(int target, vector<int>& nums)
         right++;
     }
     return (ans == INT_MAX) ? 0 : ans;
-}
-
-int main()
-{
-    vector<int> arr = {-1, 0, 1, 2, -1, -4};
-
-    return 0;
 }

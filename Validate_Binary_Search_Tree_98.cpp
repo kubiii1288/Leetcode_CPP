@@ -8,13 +8,17 @@
 int maxValue(TreeNode* root);
 bool valid(TreeNode* root);
 
-bool isValidBST(TreeNode* root) {
+bool isValidBST(TreeNode* root)
+{
     if (root == nullptr) return true;
     if (root->left == nullptr && root->right == nullptr) return true;
-    if (root->left != nullptr && root->right == nullptr) return root->left->val < root->val && root->val < maxValue(root->right) && isValidBST(root->right);
-    if (root->right != nullptr && root->left == nullptr) return root->val < root->right->val && maxValue(root->left) < root->val && isValidBST(root->left);
+    if (root->left != nullptr && root->right == nullptr) return root->left->val < root->val && root->val <
+        maxValue(root->right) && isValidBST(root->right);
+    if (root->right != nullptr && root->left == nullptr) return root->val < root->right->val && maxValue(root->left) <
+        root->val && isValidBST(root->left);
 
-    return (root->left->val < root->val && root->val < root->right->val && maxValue(root->left) < root->val && root->val < maxValue(root->right) && isValidBST(root->left) && isValidBST(root->right));
+    return (root->left->val < root->val && root->val < root->right->val && maxValue(root->left) < root->val && root->val
+        < maxValue(root->right) && isValidBST(root->left) && isValidBST(root->right));
 }
 
 int maxValue(TreeNode* root)

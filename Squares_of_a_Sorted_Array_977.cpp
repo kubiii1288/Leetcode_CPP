@@ -5,9 +5,10 @@
 #include <iostream>
 using namespace std;
 
-vector<int> sortedSquares(vector<int>& nums) {
+vector<int> sortedSquares(vector<int>& nums)
+{
     vector<int> ans = nums;
-    for (int &i : ans)
+    for (int& i : ans)
     {
         i = i * i;
     }

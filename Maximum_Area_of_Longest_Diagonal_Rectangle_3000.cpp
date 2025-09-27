@@ -4,7 +4,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
+
+int areaOfMaxDiagonal(vector<vector<int>>& dimensions)
+{
     double max_diagonal = -1;
     double max_area = -1;
 
@@ -17,7 +19,8 @@ int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
         {
             max_diagonal = diagonal;
             max_area = area;
-        } else if (diagonal == max_diagonal && area > max_area)
+        }
+        else if (diagonal == max_diagonal && area > max_area)
         {
             max_area = area;
         }
