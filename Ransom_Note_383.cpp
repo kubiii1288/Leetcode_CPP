@@ -7,21 +7,17 @@ using namespace std;
 
 bool canConstruct(string ransomNote, string magazine)
 {
-    unordered_multiset<char> s;
-    for (char c : magazine)
-    {
-        s.insert(c);
-    }
+    if (ransomNote.size() > magazine.size()) return false;
 
-    for (char c : ransomNote)
-    {
-        unordered_multiset<char>::iterator it = s.find(c);
-        if (it != s.end())
-        {
-            s.erase(it);
-        }
-        else return false;
-    }
+    vector<int> map(26,0);
 
-    return true;
+    for (char &c : magazine)
+        map[c]++;
+
+    for (char &c : ransomNote)
+    {
+        if (map[c] < 1) return false;
+        map[c]--;
+    }
+    return true ;
 }

@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Leetcode main.cpp
         TreeNode.cpp
-        TreeNode.h)
+        TreeNode.h
+        Node.cpp)

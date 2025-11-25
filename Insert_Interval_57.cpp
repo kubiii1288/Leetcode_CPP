@@ -1,15 +1,6 @@
-#include <iostream>
-#include <map>
-#include <sstream>
-#include <unordered_set>
-#include "TreeNode.h"
-#include <unordered_set>
-#include "ListNode.h"
-#include "Node.h"
-#include <unordered_map>
-
-using namespace std;
-
+//
+// Created by Anh Le on 11/24/25.
+//
 vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
     vector<vector<int>> ans;
     intervals.insert(lower_bound(intervals.begin(),intervals.end(), newInterval), newInterval);
@@ -26,14 +17,6 @@ vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInter
             pointer = {intervals[i][0], intervals[i][1]};
         }
     }
-        ans.push_back({pointer.first, pointer.second});
+    ans.push_back({pointer.first, pointer.second});
     return ans;
-}
-int main()
-{
-    vector<int> arr = {10,20,30,40,50,60};
-    arr.insert(lower_bound(arr.begin(), arr.end(), 35),35);
-    for (int i : arr)
-        cout << i << ' ';
-    return 0;
 }

@@ -2,7 +2,6 @@
 // Created by Anh Le on 9/13/25.
 //
 
-
 int maxProfit(vector<int>& prices)
 {
     int lowest = prices[0];
