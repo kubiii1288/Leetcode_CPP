@@ -1,39 +1,27 @@
+#include <assert.h>
 #include <iostream>
 #include <map>
+#include <set>
 #include <sstream>
 #include <unordered_set>
 #include "TreeNode.h"
-#include <unordered_set>
 #include "ListNode.h"
 #include "Node.h"
 #include <unordered_map>
-
+#include <queue>
+#include <climits>
+#include <regex>
+#include <numeric>
+#include "LC_Utils.h"
+#include <regex>
 using namespace std;
 
-vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
-    vector<vector<int>> ans;
-    intervals.insert(lower_bound(intervals.begin(),intervals.end(), newInterval), newInterval);
-    pair<int,int> pointer = {intervals[0][0], intervals[0][1]};
-    for (int i = 1; i < intervals.size(); i++)
-    {
-        if (pointer.first <= intervals[i][0] && intervals[i][0] <= pointer.second)
-        {
-            pointer.first = std::min(pointer.first, intervals[i][0]);
-            pointer.second = std::max(pointer.second, intervals[i][1]);
-        } else
-        {
-            ans.push_back({pointer.first, pointer.second});
-            pointer = {intervals[i][0], intervals[i][1]};
-        }
-    }
-        ans.push_back({pointer.first, pointer.second});
-    return ans;
-}
+
+
 int main()
 {
-    vector<int> arr = {10,20,30,40,50,60};
-    arr.insert(lower_bound(arr.begin(), arr.end(), 35),35);
-    for (int i : arr)
-        cout << i << ' ';
+    vector<int> nums = {5,0,1,4};
+    int k = 3;
+    cout << firstStableIndex(nums, k);
     return 0;
 }

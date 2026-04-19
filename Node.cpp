@@ -1,41 +1,22 @@
 //
 // Created by Anh Le on 11/13/25.
 //
-
-
+#include <vector>
+using namespace std;
 class Node {
 public:
-    bool val;
-    bool isLeaf;
-    Node* topLeft;
-    Node* topRight;
-    Node* bottomLeft;
-    Node* bottomRight;
-
+    int val;
+    vector<Node*> neighbors;
     Node() {
-        val = false;
-        isLeaf = false;
-        topLeft = nullptr;
-        topRight = nullptr;
-        bottomLeft = nullptr;
-        bottomRight = nullptr;
+        val = 0;
+        neighbors = vector<Node*>();
     }
-
-    Node(bool _val, bool _isLeaf) {
+    Node(int _val) {
         val = _val;
-        isLeaf = _isLeaf;
-        topLeft = nullptr;
-        topRight = nullptr;
-        bottomLeft = nullptr;
-        bottomRight = nullptr;
+        neighbors = vector<Node*>();
     }
-
-    Node(bool _val, bool _isLeaf, Node* _topLeft, Node* _topRight, Node* _bottomLeft, Node* _bottomRight) {
+    Node(int _val, vector<Node*> _neighbors) {
         val = _val;
-        isLeaf = _isLeaf;
-        topLeft = _topLeft;
-        topRight = _topRight;
-        bottomLeft = _bottomLeft;
-        bottomRight = _bottomRight;
+        neighbors = _neighbors;
     }
 };

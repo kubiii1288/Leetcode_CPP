@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(Leetcode main.cpp
         TreeNode.cpp
         TreeNode.h
-        Node.cpp)
+        Node.cpp
+        LC_Utils.h)
