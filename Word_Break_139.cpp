@@ -1,29 +1,27 @@
 //
 // Created by Anh Le on 1/21/26.
 //
-bool solve(string &s, int from, int to, vector<vector<int>> &dp, unordered_set<string> &dict)
-{
-    if (dp[from][to] != -1) return dp[from][to];
-    if (dict.find(s.substr(from,to-from)) != dict.end())
-    {
-        dp[from][to] = 1;
-    } else
-    {
-        bool valid = false;
-        for (int i = from + 1; !valid && i < to; i++)
-        {
-            valid = (solve(s,from, i, dp,dict) && solve(s,i,to,dp,dict));
+int maxLen = -1;
+bool solve(int index, int N, string& s, unordered_set<string>& dict,
+           vector<int>& dp) {
+    if (dp[index] != -1)
+        return dp[index];
+    bool valid = false;
+    for (int len = 1; len <= maxLen && index + len <= N && !valid; len++) {
+        if (dict.find(s.substr(index, len)) != dict.end()) {
+            valid = solve(index + len, N, s, dict, dp);
         }
-        dp[from][to] = valid;
     }
-    return dp[from][to];
+    return dp[index] = valid;
 }
-
-bool wordBreak(string &s, vector<string>& wordDict) {
+bool wordBreak(string s, vector<string>& wordDict) {
+    const unsigned int N = s.size();
     unordered_set<string> dict;
-    for (string &s : wordDict)
+    for (string& s : wordDict) {
         dict.insert(s);
-    vector<vector<int>> dp(s.size()+1, vector<int>(s.size()+1,-1));
-
-    return solve(s,0,s.size(),dp,dict);
+        maxLen = max(maxLen, (int)s.size());
+    }
+    vector<int> dp(N + 1, -1);
+    dp.back() = true;
+    return solve(0, N, s, dict, dp);
 }

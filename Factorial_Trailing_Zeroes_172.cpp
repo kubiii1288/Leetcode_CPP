@@ -1,3 +1,4 @@
+using namespace std;
 int trailingZeroes(int n) {
     if (n == 0)
         return 0;

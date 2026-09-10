@@ -10,6 +10,7 @@
 #include <unordered_map>
 #include <queue>
 #include <climits>
+#include <list>
 #include <regex>
 #include <numeric>
 #include "LC_Utils.h"
@@ -20,8 +21,6 @@ using namespace std;
 
 int main()
 {
-    vector<int> nums = {5,0,1,4};
-    int k = 3;
-    cout << firstStableIndex(nums, k);
+
     return 0;
 }

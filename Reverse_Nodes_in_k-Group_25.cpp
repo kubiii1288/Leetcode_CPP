@@ -53,3 +53,34 @@ ListNode* reverseKGroup(ListNode* head, int k)
     }
     return dummy.next;
 }
+
+
+ListNode* reverseKGroup(ListNode* head, int k) {
+    if (k == 1) return head;
+    vector<int> arr(k,-1);
+    ListNode* left = head;
+    ListNode* right = head;
+    int cnt = 0;
+    bool done = false;
+    while (!done)
+    {
+        while (cnt < k && right != nullptr)
+        {
+            arr[cnt] = right->val;
+            right = right->next;
+            cnt++;
+        }
+        if (cnt == k)
+        {
+            ListNode* current = left;
+            while (--cnt >=0)
+            {
+                current->val = arr[cnt];
+                current = current->next;
+            }
+            left = right;
+            cnt = 0;
+        } else done = true;
+    }
+    return head;
+}

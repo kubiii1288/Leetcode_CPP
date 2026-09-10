@@ -20,3 +20,11 @@ void rotate(vector<int>& nums, int k)
     for (int i = 0; i < k; i++)
         nums[i] = temp[i];
 }
+
+void rotate_2(vector<int>& nums, int k) {
+    k %= nums.size();
+    if (k == 0 || nums.size() == 1) return;
+    reverse(nums.begin(), nums.end());
+    reverse(nums.begin(), nums.begin() + k);
+    reverse(nums.begin() + k, nums.end());
+}

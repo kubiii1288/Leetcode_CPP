@@ -33,27 +33,22 @@ Node* copyRandomList(Node* head) {
     return headClone;
 }
 
-Node* copyRandomList(Node* head) {
-    if (head == nullptr)
-        return nullptr;
-    unordered_map<Node*, Node*> map;
-    Node* mainPointer = head;
-    Node* clonePointer = new Node(head->val);
-    map[mainPointer] = clonePointer;
-    while (mainPointer->next != nullptr) {
-        mainPointer = mainPointer->next;
-        clonePointer->next = new Node(mainPointer->val);
-        clonePointer = clonePointer->next;
-        map[mainPointer] = clonePointer;
-    }
 
-    mainPointer = head;
-    clonePointer = map[mainPointer];
-    clonePointer->random = map[mainPointer->random];
-    while (mainPointer->next != nullptr) {
-        mainPointer = mainPointer->next;
-        clonePointer = map[mainPointer];
-        clonePointer->random = map[mainPointer->random];
+Node* copyRandomList(Node* head) {
+    if (head == nullptr) return head;
+    unordered_map<Node*,Node*> mp;
+    Node* current = head;
+    while (current != nullptr)
+    {
+        mp[current] = new Node(current->val);
+        current = current->next;
     }
-    return map[head];
+    current = head;
+    while (current != nullptr)
+    {
+        mp[current]->next = mp[current->next];
+        mp[current]->random = mp[current->random];
+        current = current->next;
+    }
+    return mp[head];
 }
