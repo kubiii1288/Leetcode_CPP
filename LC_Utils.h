@@ -2,6 +2,9 @@
 // Created by Anh Le on 12/23/25.
 //
 #include <iostream>
+#include <vector>
+#include "ListNode.h"
+class ListNode;
 using namespace std;
 #ifndef LEETCODE_LC_UTILS_H
 #define LEETCODE_LC_UTILS_H
